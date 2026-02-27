@@ -15,10 +15,10 @@ except ImportError:
 pyautogui.FAILSAFE = True
 pyautogui.PAUSE = 0
 
-BASE_DIR    = r"C:\Users\Joshua\Documents\Scripts\autoclicker"
-CONFIG_PATH = BASE_DIR + r"\config.json"
-LOG_PATH    = BASE_DIR + r"\click_log.txt"
-PID_PATH    = BASE_DIR + r"\autoclicker.pid"
+BASE_DIR    = os.path.dirname(sys.executable if getattr(sys, "frozen", False) else os.path.abspath(__file__))
+CONFIG_PATH = os.path.join(BASE_DIR, "config.json")
+LOG_PATH    = os.path.join(BASE_DIR, "click_log.txt")
+PID_PATH    = os.path.join(BASE_DIR, "autoclicker.pid")
 
 
 def kill_existing():
