@@ -5,5 +5,5 @@
   "clicks_per_minute": 0,
   "clicks_per_hour": 0,
   "button": "left",
-  "stop_key": "ctrl+alt+f9"
+  "stop_key": "ctrl+shift+f9"
 }
